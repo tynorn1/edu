@@ -4,8 +4,8 @@ from datetime import datetime
 import pandas as pd
 
 def excel_to_parquet():
-    df = pd.read_excel("/c/Users/TRAVEEND/OneDrive - Volvo Cars/Data/myproject/excell/source.xlsx")
-    df.to_parquet("/c/Users/TRAVEEND/OneDrive - Volvo Cars/Data/myproject/excell/source.parquet", index=False)
+    df = pd.read_excel("/mnt/c/Users/TRAVEEND/OneDrive - Volvo Cars/Data/myproject/excell/source.xlsx")
+    df.to_parquet("/mnt/c/Users/TRAVEEND/OneDrive - Volvo Cars/Data/myproject/excell/source.parquet", index=False)
     print("Excel file converted to 'source.parquet'.")
 
 default_args = {
