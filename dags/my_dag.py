@@ -38,7 +38,7 @@ if LATEST_VERSION == VERSION_1:
 
         t1_v1 = BashOperator(
             task_id='print_date',
-            bash_command='date',
+            bash_command='echo "hello world"',
         )
 
         t2_v1 = BashOperator(
@@ -86,7 +86,7 @@ if LATEST_VERSION == VERSION_2:
 
         t1_v2 = BashOperator(
             task_id='print_date',
-            bash_command='date',
+            bash_command='echo "hello world"',
         )
 
         t2_v2 = BashOperator(
