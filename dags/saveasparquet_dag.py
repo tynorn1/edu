@@ -16,7 +16,7 @@ default_args = {
 with DAG(
     dag_id='excel_to_parquet_dag',
     default_args=default_args,
-    schedule=None,  # Use 'schedule' instead of 'schedule_interval'
+    schedule=None,
     catchup=False,
     tags=['savetopaarquet'],
     description='A simple DAG to convert Excel to Parquet',
